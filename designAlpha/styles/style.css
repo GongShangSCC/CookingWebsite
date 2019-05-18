@@ -1,0 +1,41 @@
+html {
+  font-family: Arial, sans-serif;
+}
+body {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.header {
+  margin-top: 1rem;
+}
+.header img {
+  width: 50px;
+}
+.header span {
+  color: #2e2e2e;
+}
+.sign-log a {
+  color: #2e2e2e;
+  padding: 10px;
+}
+.input-search input {
+  width: 55%;
+  color: #878787;
+}
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  width: 40px;
+}
+.btn-signup {
+  background-color: #00bc87;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.wai-fan img {
+  cursor: pointer;
+}
+.wai-fan b {
+  color: #878787;
+  font-family: sans-serif;
+}
