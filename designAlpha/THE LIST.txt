@@ -1,0 +1,37 @@
+Pages to be made
+
+
+1 Main page(front page)
+
+2 drinks(drop down beverages)
+
+2 salad
+
+2 desserts
+
+2 Dishes
+
+1 Restaurants
+
+1 about us #FOOTER
+1 sign in
+
+1 chef 
+
+
+
+Desktop version
+
+Top and Sidebar
+
+
+Mobile version 
+Sidebar
+
+
+
+MAIN PAGE
+
+Contents
+-Chef's food pick 
+-Food facts(Random article)

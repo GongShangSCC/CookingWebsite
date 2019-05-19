@@ -1,9 +1,7 @@
-html {
-  font-family: Arial, sans-serif;
-}
 body {
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: Haettenschweiler, sans-serif;
+  font-size: 20px;
 }
 .header {
   margin-top: 1rem;
@@ -21,6 +19,7 @@ body {
 .input-search input {
   width: 55%;
   color: #878787;
+  font-family: Arial, sans-serif;
 }
 .button {
   background-color: #000000;
@@ -37,5 +36,11 @@ body {
 }
 .wai-fan b {
   color: #878787;
-  font-family: sans-serif;
+  font-family: Forte, sans-serif;
+}
+.body-section-nav {
+  margin: 50px;
+}
+.body-section-nav a {
+  color: #2e2e2e;
 }
