@@ -16,6 +16,9 @@ body {
   color: #2e2e2e;
   padding: 10px;
 }
+.user-icon {
+  width: 15%;
+}
 .input-search input {
   width: 55%;
   color: #878787;
@@ -43,4 +46,8 @@ body {
 }
 .body-section-nav a {
   color: #2e2e2e;
+}
+.search-label {
+  margin-left: 21rem;
+  font-family: Arial, sans-serif;
 }
