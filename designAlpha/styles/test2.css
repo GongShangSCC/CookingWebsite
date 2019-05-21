@@ -20,9 +20,18 @@
 	color: #fff;
 }
 
+.log-sign button:hover {
+	color: #fff;
+}
+
+
 .log-sign a {
 	margin-right: 1rem;
 	color: #000;
+}
+
+.log-sign img {
+	cursor: pointer;
 }
 
 /*		BODY SECTION		*/
@@ -45,9 +54,10 @@
 	background-color: #161616;
 }
 
-.footer-section img {
+.footer-section img{
 	height: 3rem;
 	margin-left: 0.5rem;
+	cursor: pointer;
 }
 
 .footer-images {
