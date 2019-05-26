@@ -18,6 +18,7 @@ create table Food
     on delete set null
     on update cascade
 );
+
 create table restaurantLocation
 (
 	nameOfRestaurant TEXT primary key,
@@ -84,24 +85,19 @@ create table Serves
 create table Meal
 (
 	mealId int auto_increment,
-	drink varchar(20) ,
-    salad varchar(20) ,
-    desert varchar(20) ,
-    dish varchar(20) ,
-    descri mediumtext not null,
-    foreign key(drink) references Food(fName)
+    descri mediumtext not null    
+);
+create table mealplan
+(
+	mealId int,
+    fName varchar(20),
+    primary key(mealId,fName),
+    foreign key(mealId) references Meal(mealId)
     on delete cascade
     on update cascade,
-    foreign key(salad) references Food(fName)
-    on delete set null
-    on update cascade,
-    foreign key(desert) references Food(fName)
+    foreign key(fName) references Food(fName)
     on delete cascade
-    on update cascade,
-    foreign key(dish) references Food(fName)
-    on delete cascade
-    on update cascade,
-    primary key(mealId)
+    on update cascade
 );
 create table Facts
 (
