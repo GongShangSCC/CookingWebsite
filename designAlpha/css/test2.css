@@ -1,0 +1,78 @@
+
+/*		HEAD SECTION		*/
+.rice-icon img {
+	width: 3.5rem;
+	margin-left: 4rem;
+}
+
+.rice-icon b {
+	font-family: Arial, sans-serif;
+}
+
+.log-sign {
+	margin-right: 4rem;
+	font-family: Arial, sans-serif;
+}
+
+.log-sign button {
+	background-color: #00BC87;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.log-sign button:hover {
+	color: #fff;
+}
+
+
+.log-sign a {
+	margin-right: 1rem;
+	color: #000;
+}
+
+.log-sign img {
+	cursor: pointer;
+}
+
+/*		BODY SECTION		*/
+.body-section {
+	margin-top: 4rem;
+}
+
+.search-label {
+	margin-left: 15rem;
+}
+
+/*		SLIDE SECTION		*/
+.slide-section {
+	margin-top: 4rem;
+}
+
+/*		FOOTER SECTION		*/
+.footer-section {
+	margin-top: 4rem;
+	background-color: #161616;
+}
+
+.footer-section img{
+	height: 3rem;
+	margin-left: 0.5rem;
+	cursor: pointer;
+}
+
+.footer-images {
+	margin-left: 12rem;
+}
+
+.footer-words {
+	margin-top: 1rem;
+}
+
+.footer-words li{
+	margin-right: 12rem;
+	list-style: none;
+}
+
+.footer-words li a {
+	color: #555858;
+}

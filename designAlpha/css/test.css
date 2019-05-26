@@ -1,0 +1,53 @@
+
+/*		HEAD SECTION		*/
+.header-section {
+	margin-top: 1rem;
+}
+
+.rice-icon img {
+	width: 3.5rem;
+	margin-left: 4rem;
+}
+
+.rice-icon b {
+	color: #878787;;
+	font-family: Forte, sans-serif;
+}
+
+.log-sign {
+	margin-right: 4rem;
+}
+
+.log-sign button {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #00BC87;
+}
+
+.log-sign a {
+	margin-right: 0.5rem;
+}
+
+/*		BODY SECTION		*/
+.body-section {
+	margin-top: 3rem;
+}
+
+.search-label {
+	margin-left: 15rem;
+}
+
+.slide-section {
+	width: 60%;
+	margin: 3rem auto;
+}
+
+/*		FOOTER		*/
+.footer-section {
+	height: 70px;
+}
+
+.footer-section img {
+	width: 35px;
+	margin-left: 15rem;
+}

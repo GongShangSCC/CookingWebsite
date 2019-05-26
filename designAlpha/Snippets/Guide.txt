@@ -1,0 +1,26 @@
+Snippets it's very useful to make your life easier.
+
+Sublime Text 3:
+ - Tools > New Snippet
+
+Installing:
+ Win+R > %appdata% > Sublime Text 3 > Packages > User and paste here, but I recommend to you create a new folder(Example: for HTML's snippets I've created a HTML folder)
+
+Snippet's code:
+ <snippet>
+	<content><![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
+
+ THIS IS A DEFAULT SNIPPET WRITTEN BY A SUBLIME TEXT DEVS AND $ MEANS THAT CURSOR WILL AUTOMATICALLY MOVE THERE 
+ IN EXAMPLE ${1:this} YOU CAN WRITE NOTHING AFTER A NUMBER AND WRITE IN THIS WAY ${1} AND AS I SAID WHEN YOU WILL WRITE A KEY WORD
+ IN OUR EXAMPLE KEY WORD IT'S "hello" AND WHEN YOU'LL WRITE A KEY WORD AND PRESS "TAB" IT WILL WORK AND AUTOMATICALLY WRITE "Hello, this is a snippet"
+ AND <scope>source.python</scope> MEANS THAT IN WHICH LANGUAGE IT'LL BE RELATED, SO THIS SNIPPET RELATED WITH PYTHON, FOR HTML IT'S <scope>text.html</scope>
+
+Using:
+ write a KEY word has written by you  (Example: I have a snippet "bsSection" and it will automatically fill a code,because of snippet)
