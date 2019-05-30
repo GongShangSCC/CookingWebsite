@@ -1,38 +1,40 @@
-create database Restaurant;
+/*create database Restaurant;*/
 use Restaurant;
-create table Chef
+/*create table Chef
 (
 	ID int primary key auto_increment,
     chefName varchar(20),
     portfolio mediumtext    
-);
-create table Food
+);*/
+/*create table Food
 (
 	fName varchar(20) primary key,
     picture varchar(200),
     ingredients mediumtext not null, 
     steps mediumtext not null, 
-    chefId NUMERIC,
+    chefId int,
     foodtype text check (foodtype in ('Drink', 'Dish', 'Desert', 'Salad')),
     foreign key(chefId) references Chef(ID)
     on delete set null
     on update cascade
-);
+);*/
 
-create table restaurantLocation
+/*create table restaurantLocation
 (
-	nameOfRestaurant TEXT primary key,
+	nameOfRestaurant varchar(255),
     street text not null,
     region text not null,
-    city text not null,
-    rating numeric(1,0) check (rating >= 0 and rating <= 5)
+    city text not null,    
+    rating numeric(1,0) check (rating >= 0 and rating <= 5),
+    primary key(nameOfRestaurant)
 );
+
 
 create table comments
 (
 	ID int primary key auto_increment,
     foodName varchar(20) not null,
-    nameOfCommentor text default "Anonymous",
+    nameOfCommentor varchar(255) default "Anonymous",
     timestamp timestamp default CURRENT_TIMESTAMP
 ); 
 create table phonenumbers
@@ -42,10 +44,11 @@ create table phonenumbers
     phoneNumber numeric(8,0) check(phoneNumber >= 10000000),
     primary key(phoneNumber)
 );
+
 create table userNo
 (
 	userId int not null,
-    phoneNo int check (phoneNo >= 10000000),
+    phoneNo numeric(8,0) check (phoneNo >= 10000000),
     primary key(phoneNo),
     foreign key(userId) references Chef(ID)
     on update cascade
@@ -57,8 +60,8 @@ create table userNo
 
 create table RestaurantNo
 (
-	nameOfRestaurant TEXT not null,
-    phoneNo int check (phoneNo >= 10000000),
+	nameOfRestaurant varchar(255) not null,
+    phoneNo numeric(8,0) check (phoneNo >= 10000000),
     foreign key(nameOfRestaurant) references restaurantLocation(nameOfRestaurant)
     on update cascade
     on delete cascade,
@@ -70,7 +73,7 @@ create table RestaurantNo
 
 create table Serves
 (
-	nameOfRestaurant TEXT not null,
+	nameOfRestaurant varchar(255) not null,
     fName varchar(20) not null,
     price numeric(7,2) check(price > 0),
     primary key(nameOfRestaurant,fName),
@@ -81,12 +84,14 @@ create table Serves
     on delete cascade
     on update cascade
 );
-
+*/
 create table Meal
 (
 	mealId int auto_increment,
-    descri mediumtext not null    
+    descri mediumtext not null,
+    primary key(mealId)
 );
+
 create table mealplan
 (
 	mealId int,
