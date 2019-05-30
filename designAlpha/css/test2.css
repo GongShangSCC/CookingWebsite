@@ -14,24 +14,14 @@
 	font-family: Arial, sans-serif;
 }
 
-.log-sign button {
+.log-sign .signup-button {
 	background-color: #00BC87;
 	text-transform: uppercase;
 	color: #fff;
 }
 
-.log-sign button:hover {
+.log-sign .signup-button:hover {
 	color: #fff;
-}
-
-
-.log-sign a {
-	margin-right: 1rem;
-	color: #000;
-}
-
-.log-sign img {
-	cursor: pointer;
 }
 
 /*		BODY SECTION		*/
