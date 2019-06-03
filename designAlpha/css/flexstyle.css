@@ -38,6 +38,26 @@
 	margin-top: 4rem;
 }
 
+/*		FOOD SECTION		*/
+.food-section {
+	margin-top: 3rem;
+	margin-right: 40rem;
+}
+
+.food-section .hour {
+	display: inline-flex;
+}
+
+.food-section img {
+	width: 40px;
+}
+
+.food-section p {
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+
 /*		FOOTER SECTION		*/
 .footer-section {
 	margin-top: 4rem;

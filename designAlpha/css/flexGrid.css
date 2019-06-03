@@ -1,0 +1,116 @@
+.header {
+	margin-top: 2rem;
+}
+
+.header button {
+	margin-top: 1rem;
+}
+
+.header img {
+  margin-top: 1rem;
+}
+
+.header .btn-signup {
+	background-color: #2D2D2D;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.header .btn-link {
+	color: #2D2D2D;
+}
+
+/*	NAVIGATOR	*/
+.navigator {
+	margin-top: 5rem;
+}
+
+.navigator a {
+	color: #7C7C7D;
+}
+
+/*		CONTENT 	*/
+.content {
+	margin-top: 3rem;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+.content .time {
+	margin-top: 2rem;
+}
+
+.save-print {
+	margin-top: 0.5rem;
+}
+
+.heart {
+	background-color: #ef5d5d;
+	margin-left: 0.9rem;
+	border-width: 1rem;
+	padding: 10px 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.print {
+	background-color: #e6e6e6;
+	width: 305px;
+	padding: 7px 5px;
+	color: #7e7e7e;
+	cursor: pointer;
+}
+
+.print img {
+	margin-left: 6.5rem;
+}
+
+/*		INGRIDIENTS		*/
+.collapse-section {
+	margin-top: 2rem;
+}
+
+.collapse-section button {
+	color: #2D2D2D;
+	text-transform: uppercase;
+}
+
+.collapse-section button:hover {
+	color: #2D2D2D;
+	cursor: pointer;
+}
+
+.collapse-section span {
+	color: #2D2D2D;;
+}
+
+.collapse-section li {
+	color: #7e7e7e;
+}
+
+.collapse-section .ordered-list li{
+	color: #2D2D2D;
+}
+
+/*		FOOTER 		*/
+.footer {
+	margin-top: 3rem;
+	padding: 10px;
+}
+
+.footer img {
+	margin-left: 7rem;
+}
+
+.footer img:hover {
+	cursor: pointer;
+}
+
+.footer .links a{
+	color: #7e7e7e;
+	margin-right: 2rem;
+	margin-top: 0.7rem;
+}
+

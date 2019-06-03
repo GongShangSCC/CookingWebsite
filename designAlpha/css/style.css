@@ -1,53 +1,60 @@
-body {
-  color: #ffffff;
-  font-family: Haettenschweiler, sans-serif;
-  font-size: 20px;
-}
 .header {
+  margin-top: 2rem;
+}
+
+.header button {
   margin-top: 1rem;
 }
+
 .header img {
-  width: 50px;
+  margin-top: 1rem;
 }
-.header span {
-  color: #2e2e2e;
-}
-.sign-log a {
-  color: #2e2e2e;
-  padding: 10px;
-}
-.user-icon {
-  width: 15%;
-}
-.input-search input {
-  width: 55%;
-  color: #878787;
-  font-family: Arial, sans-serif;
-}
-.button {
-  background-color: #000000;
-  color: #ffffff;
-  width: 40px;
-}
-.btn-signup {
-  background-color: #00bc87;
+
+.header .btn-signup {
+  background-color: #2D2D2D;
+  color: #fff;
   text-transform: uppercase;
-  color: #ffffff;
 }
-.wai-fan img {
+
+.header .btn-link {
+  color: #2D2D2D;
+}
+
+/*  NAVIGATOR */
+.navigator {
+  margin-top: 5rem;
+}
+
+.navigator a {
+  color: #7C7C7D;
+}
+
+/*    SLIDES    */
+.slide-section {
+  margin-top: 3rem;
+}
+
+.slide-section:hover {
   cursor: pointer;
 }
-.wai-fan b {
-  color: #878787;
-  font-family: Forte, sans-serif;
+
+/*    FOOTER    */
+.footer {
+  margin-top: 3rem;
+  padding: 10px;
 }
-.body-section-nav {
-  margin: 50px;
+
+.footer img {
+  margin-left: 7rem;
 }
-.body-section-nav a {
-  color: #2e2e2e;
+
+.footer img:hover {
+  cursor: pointer;
 }
-.search-label {
-  margin-left: 21rem;
-  font-family: Arial, sans-serif;
+
+.footer .links a{
+  color: #7e7e7e;
+  margin-right: 2rem;
+  margin-top: 0.7rem;
 }
+
