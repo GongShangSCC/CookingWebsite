@@ -1,25 +1,34 @@
-/*create database Restaurant;*/
+
+create database Restaurant;
 use Restaurant;
-/*create table Chef
+create table Chef
 (
 	ID int primary key auto_increment,
     chefName varchar(20),
     portfolio mediumtext    
-);*/
-/*create table Food
+);
+create table FoodCategory
+(
+    foodtype varchar(100) primary key,
+    itemDescription text not null
+);
+create table Food
 (
 	fName varchar(20) primary key,
     picture varchar(200),
     ingredients mediumtext not null, 
     steps mediumtext not null, 
     chefId int,
-    foodtype text check (foodtype in ('Drink', 'Dish', 'Desert', 'Salad')),
+    foodtype varchar(100)  not null,
     foreign key(chefId) references Chef(ID)
     on delete set null
+    on update cascade,
+    foreign key(foodtype) references FoodCategory(foodtype)
+    on delete cascade
     on update cascade
-);*/
+);
 
-/*create table restaurantLocation
+create table restaurantLocation
 (
 	nameOfRestaurant varchar(255),
     street text not null,
@@ -84,7 +93,7 @@ create table Serves
     on delete cascade
     on update cascade
 );
-*/
+
 create table Meal
 (
 	mealId int auto_increment,
