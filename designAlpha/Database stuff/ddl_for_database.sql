@@ -1,17 +1,29 @@
-
+drop database Restaurant;
 create database Restaurant;
 use Restaurant;
-create table Chef
+
+create table Users
 (
 	ID int primary key auto_increment,
-    chefName varchar(20),
-    portfolio mediumtext    
+    username varchar(255) default "Anonymous",
+    creationDate timestamp default CURRENT_TIMESTAMP
 );
+
+create table Chef
+(
+	ID int primary key,
+    portfolio mediumtext,
+    foreign key(ID) references Users(ID)
+    on delete cascade
+    on update cascade
+);
+
 create table FoodCategory
 (
     foodtype varchar(100) primary key,
     itemDescription text not null
 );
+
 create table Food
 (
 	fName varchar(20) primary key,
@@ -38,14 +50,17 @@ create table restaurantLocation
     primary key(nameOfRestaurant)
 );
 
-
 create table comments
 (
 	ID int primary key auto_increment,
     foodName varchar(20) not null,
-    nameOfCommentor varchar(255) default "Anonymous",
-    timestamp timestamp default CURRENT_TIMESTAMP
+    CommentorID int,
+    CommentorCreationDate timestamp default CURRENT_TIMESTAMP,
+    foreign key(CommentorID) references Users(ID)
+    on delete cascade
+    on update cascade
 ); 
+
 create table phonenumbers
 (
 	countryCode numeric(3,0) not null check(countryCode > 0) ,
