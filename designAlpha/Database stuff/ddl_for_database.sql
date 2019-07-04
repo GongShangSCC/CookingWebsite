@@ -26,7 +26,7 @@ create table FoodCategory
 
 create table Food
 (
-	fName varchar(20) primary key,
+	fName varchar(200) primary key,
     picture varchar(200),
     ingredients mediumtext not null, 
     steps mediumtext not null, 
@@ -53,10 +53,13 @@ create table restaurantLocation
 create table comments
 (
 	ID int primary key auto_increment,
-    foodName varchar(20) not null,
+    foodName varchar(200) not null,
     CommentorID int,
     CommentorCreationDate timestamp default CURRENT_TIMESTAMP,
     foreign key(CommentorID) references Users(ID)
+    on delete cascade
+    on update cascade,
+    foreign key(foodName) references Food(fName)
     on delete cascade
     on update cascade
 ); 
@@ -98,7 +101,7 @@ create table RestaurantNo
 create table Serves
 (
 	nameOfRestaurant varchar(255) not null,
-    fName varchar(20) not null,
+    fName varchar(200) not null,
     price numeric(7,2) check(price > 0),
     primary key(nameOfRestaurant,fName),
     foreign key(fname) references Food(fname)
@@ -119,7 +122,7 @@ create table Meal
 create table mealplan
 (
 	mealId int,
-    fName varchar(20),
+    fName varchar(200),
     primary key(mealId,fName),
     foreign key(mealId) references Meal(mealId)
     on delete cascade
@@ -148,7 +151,7 @@ create table mealFacts
 create table foodFacts
 (
 	factId int not null,
-	fname varchar(20) not null,
+	fname varchar(200) not null,
 	foreign key(fname) references Food(fname)
     on delete cascade
     on update cascade,
