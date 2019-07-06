@@ -1,8 +1,6 @@
 use Restaurant;
 
-insert into Users(username) values("Mr. Phil");
-
-insert into Chef(ID, portfolio) values (1,"We here at LaoWai GO! believe in quality services and support.. WE seek to provide our users with the best. I am the best");
+insert into Chef(username,portforlio) values ("Mr. Phil","We here at LaoWai GO! believe in quality services and support.. WE seek to provide our users with the best. I am the best");
 
 insert into FoodCategory(foodtype,itemDescription) values
 ("Drinks","The liqued sip sip on lip lip"),
@@ -12,7 +10,7 @@ insert into FoodCategory(foodtype,itemDescription) values
 
 /*NOTE TO SELVES: JUST MAKE A PROGRAM NEXT TIME. MAKE SURE THE INGREDIENTS AND STEPS ARE IN 
 SEPARATE, INDIVIDUAL FILES AS WELL AS THE IMAGES */
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Hummus","/images/hummus.jpg","•	12 oz dried Chickpeas (about 2 cups), soaked in water overnight
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Hummus","hummus.jpg","•	12 oz dried Chickpeas (about 2 cups), soaked in water overnight
 •	1 tsp Baking Soda
 •	3-5 cloves of Garlic
 •	Juice of 1 Lemon
@@ -30,7 +28,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Hummus
 6.	Serve with the remaining peeled Chickpeas and any toppings of your choice. Leftovers will keep well in a sealed container in the fridge for up to 5 days.
 ",1,"Dishes");
 
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Lasagna","/images/lasanga.jpg","•	1/2 Yellow Onion, diced
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Lasagna","lasanga.jpg","•	1/2 Yellow Onion, diced
 •	1 cup Carrot, finely diced
 •	14 oz Crushed tomatoes
 •	¼ cup Tomato Paste
@@ -53,7 +51,7 @@ For the Lasagna:
 3.	Top it Off: add the remainder of the Eggplant to the Casserole, followed by the rest of the Vegan Ricotta. Pour 1 cup of Marinara Sauce over the dish, and swirl it together with the Ricotta to complete the Lasagna.
 4.	Bake and Serve: bake the Lasagna at 375F for 35 minutes. Let the Lasagna sit for 10 minutes, then cut and serve as desired.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Garlic crab","/images/garlic_crab.jpg","•	8 crabs, cleaned and cracked
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Garlic crab","garlic_crab.jpg","•	8 crabs, cleaned and cracked
 •	1 whole bulb of garlic, finely chopped
 •	1 small onion, chopped
 •	1-2 cup butter, softened
@@ -69,7 +67,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Garlic
 7.	Garlic sauce should be braised onto the shell of the crab.
 8.	Serve as soon as possible, sprinkled with parsley and garnished with lemon
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peking duck","/images/peking_duck.jpeg","•	One 5 to 6-pound whole duck
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peking duck","peking_duck.jpeg","•	One 5 to 6-pound whole duck
 •	Sea salt
 •	Freshly ground white pepper
 •	6 tablespoons honey
@@ -90,7 +88,7 @@ In a small bowl, mix together the honey, 6 tablespoons water, five-spice, soy sa
 Preheat the oven to 350 degrees F. Place the duck in the oven and cook for 45 minutes. Flip the duck over, baste with the reserved glaze and cook until the skin is crisp and golden brown, another 45 minutes. Make sure you check halfway through that it is not getting too dark. If it is getting too dark before half the cook time is up, turn your heat down and lower the rack in the oven. When the duck is cooked, remove from the oven and let rest while you make your sauce.
 For the sauce: In a small bowl, mix the cornstarch with 1 tablespoon cold water and set aside. Next, heat a pan or wok over medium heat and add the hoisin, sugar, sesame oil and soy sauce. When the sauce starts to bubble slightly, add the cornstarch mixture and stir well to thicken. Set aside and let cool. Carve and slice some duck. Place a teaspoon of the sauce in the center of each pancake, add a couple slices of duck,",1,"Dishes");
 
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Bunny chow","/images/bunny_chow.jpg","•	1kg lamb pieces
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Bunny chow","bunny_chow.jpg","•	1kg lamb pieces
 •	Little oil to cover base of pot
 •	2 large cinnamon sticks
 •	1 tsp fennel seeds
@@ -125,7 +123,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Bunny 
 12.	When potatoes are cooked, stir and add coriander
 13.	Serve with salad.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Last-Minute Lasagna","/images/last_minute_lasagna.jpg","•	1 26-ounce jar pasta sauce
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Last-Minute Lasagna","last_minute_lasagna.jpg","•	1 26-ounce jar pasta sauce
 •	2 30-ounce bags frozen large cheese ravioli, unthawed
 •	1 10-ounce box frozen chopped spinach, thawed and squeezed of excess water
 •	1 8-ounce bag shredded mozzarella
@@ -138,7 +136,7 @@ Arrange 12 ravioli on top and scatter the spinach over them. Top with half of ea
 Step 3
 Cover with foil and bake 25 minutes. Uncover and bake 5 to 10 minutes more or until bubbly.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Ice Cream Cake","/images/ice_cream_cake.jpg","•	1 box yellow cake mix
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Ice Cream Cake","ice_cream_cake.jpg","•	1 box yellow cake mix
 •	3 large eggs
 •	1/3 cup vegetable oil
 •	2 quarts coffee (or any other flavor) ice cream, softened slightly
@@ -153,7 +151,7 @@ Place one of the layers on an 8-inch cardboard cake round or a freezer-proof cak
 Step 5
 Transfer the remaining softened ice cream to a mixing bowl. Cream by hand with a rubber spatula until it reaches the consistency of frosting. Frost the top and the sides of the cake with the ice cream.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Quesadilla Pie","/images/chicken_quesadilla_pie.jpg","•	1 10-ounce can green or red enchilada sauce
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Quesadilla Pie","chicken_quesadilla_pie.jpg","•	1 10-ounce can green or red enchilada sauce
 •	1/4 cup heavy cream
 •	4 8-inch flour tortillas
 •	2 cups (8 ounces) grated Monterey Jack, plus 1/4 cup for the top
@@ -172,7 +170,7 @@ Cover loosely with foil and bake for 20 minutes. Uncover and bake for 5 minutes 
 Step 4
 Slice into wedges and serve with the salsa, avocado, and cilantro.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Double Chocolate-Chip Cookies","/images/double_chocolate_chip_cookies.jpg","•	1/2 cup unsalted butter, at room temperature
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Double Chocolate-Chip Cookies","double_chocolate_chip_cookies.jpg","•	1/2 cup unsalted butter, at room temperature
 •	1/2 cup granulated sugar
 •	1/2 cup brown sugar
 •	1 large egg
@@ -191,7 +189,7 @@ Form the dough into approximately 1 1/2-inch balls. Place on parchment- or foil-
 Step 3
 Bake until the centers are just set, about 12 minutes. Let cool on sheets for 5 minutes, then transfer to wire racks.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Banana Nut Bread","/banana_nut_bread.jpg","•	1 box yellow cake mix
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Banana Nut Bread","banana_nut_bread.jpg","•	1 box yellow cake mix
 •	1 package Jell-O Instant Banana Cream Pudding & Pie Filling
 •	1/2 cup water
 •	1/2 cup vegetable oil
@@ -205,7 +203,7 @@ Mix all the ingredients well. Pour into 2 large or 4 small greased loaf pans.
 Step 3
 Bake for 40 to 45 minutes. (For those allergic to nuts, this recipe can be made without the pecans.)
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Cacciatore","/images/chicken_cacciatore.jpg","•	1/4 cup all-purpose flour
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Cacciatore","chicken_cacciatore.jpg","•	1/4 cup all-purpose flour
 •	1 1/4 teaspoons kosher salt
 •	3/4 teaspoon black pepper
 •	1 3 1/2- to 4-pound chicken, cut into pieces
@@ -228,7 +226,7 @@ Add the onion to the pan and cook for 2 minutes. Add the carrot, celery, garlic,
 Step 4
 Add the chicken, reduce heat, and cover. Simmer for 45 minutes, turning the pieces occasionally. Remove and discard the bay leaf. Stir in the parsley and serve on individual plates.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Cedar-Plank Salmon","/images/cedar_plank_salmon.jpg","•	1 2-pound salmon fillet, skin on
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Cedar-Plank Salmon","cedar_plank_salmon.jpg","•	1 2-pound salmon fillet, skin on
 •	1 cedar plank, soaked in water 20 minutes
 •	1/2 cup brown sugar
 •	2 tablespoons canola oil
@@ -243,7 +241,7 @@ Combine the brown sugar, oil, thyme, and cayenne in a bowl. Brush over the salmo
 Step 4
 Place the planked salmon on the grilling grate and cook, with the grill covered, until mostly cooked through but still slightly pink in the middle, about 40 minutes.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Marsala","/images/chicken_marsala.jpg","•	16 fresh sage leaves
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Marsala","chicken_marsala.jpg","•	16 fresh sage leaves
 •	8 large, thin slices prosciutto
 •	8 chicken cutlets
 •	2 tablespoons all-purpose flour
@@ -266,7 +264,7 @@ Meanwhile, reduce heat under the skillet to medium-low and add the Marsala. Simm
 Step 6
 Add the capers and parsley. Stir in the remaining tablespoon of butter. Spoon the sauce over the chicken.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Lasagna-Style Baked Ziti","/images/lasagna_style baked_ziti.jpg","•	12 ounces ziti (about 4 cups)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Lasagna-Style Baked Ziti","lasagna_style baked_ziti.jpg","•	12 ounces ziti (about 4 cups)
 •	1 tablespoon olive oil
 •	1 large onion, chopped
 •	2 cloves garlic, finely chopped
@@ -288,7 +286,7 @@ Toss the pasta with the meat mixture, marinara sauce, spinach, ricotta, and ¼ c
 Step 5
 Transfer to a 9-by-13-inch baking dish or 4 large ramekins. Sprinkle with the mozzarella and the remaining ¼ cup of the Parmesan. Bake until the cheese melts, 12 to 15 minutes.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("White Sangria","/images/white_sangria.jpg","•	6 cups Chardonnay or Sauvignon Blanc
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("White Sangria","white_sangria.jpg","•	6 cups Chardonnay or Sauvignon Blanc
 •	1/4 cup superfine sugar
 •	1 cup white grape juice
 •	1 ripe nectarine, pitted and cut into thin wedges
@@ -302,7 +300,7 @@ Place the pitcher in the refrigerator and let the sangria sit for at least 1 hou
 Step 3
 Just before serving, stir in the club soda and ice cubes.
 ",1,"Drinks");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Rigatoni With Grilled Peppers and Onions","/images/rigatoni_with_grilled_peppers_and_onions.jpg","•	12 ounces (4 to 5 cups) rigatoni
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Rigatoni With Grilled Peppers and Onions","rigatoni_with_grilled_peppers_and_onions.jpg","•	12 ounces (4 to 5 cups) rigatoni
 •	2 medium red onions, sliced into 1/2-inch-thick rings
 •	2 large red bell peppers, cut into quarters
 •	1 tablespoon olive oil
@@ -321,7 +319,7 @@ Add the grilled vegetables, spinach, reserved pasta water, and ¾ cup of the Par
 Step 5
 Top with the basil and the remaining ¼ cup Parmesan before serving.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Macaroni and Cheese","/images/macaroni_and_cheese.jpg","•	5 tablespoons butter, plus more for the baking dish
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Macaroni and Cheese","macaroni_and_cheese.jpg","•	5 tablespoons butter, plus more for the baking dish
 •	1 pound elbow macaroni
 •	½ cup all-purpose flour
 •	6 cups whole milk
@@ -338,7 +336,7 @@ Wipe out the past pot and melt the butter over medium heat. Add the flour and co
 Step 4
 Add the Gruyère, Cheddar, cayenne, and 1½ teaspoon salt and cook just until the cheeses melt. Mix in the pasta. Transfer the pasta mixture to the prepared baking dish and bake until golden, 25 to 30 minutes.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken With Parmesan, Garlic, and Herb Crust","/images/chicken_with_parmesan_garlic_and_herb_crust.jpg","•	1 garlic clove, peeled
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken With Parmesan, Garlic, and Herb Crust","chicken_with_parmesan_garlic_and_herb_crust.jpg","•	1 garlic clove, peeled
 •	1/4 cup fresh flat-leaf parsley leaves
 •	2 slices whole-wheat bread
 •	1/4 cup grated Parmesan (1 ounce)
@@ -358,7 +356,7 @@ Arrange the meat or fish in the baking dish. Spread with the mustard, then pat t
 Step 5
 Bake until cooked through, 20 to 25 minutes for the chicken, 30 minutes for the pork, or 20 minutes for the salmon. Divide among 4 plates and season with salt and pepper to taste.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basic Quiche","/images/basic_quiche.jpg","•	1 9-inch refrigerated piecrust
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basic Quiche","basic_quiche.jpg","•	1 9-inch refrigerated piecrust
 •	2 tablespoons olive oil
 •	2 medium onions, chopped
 •	Kosher salt and black pepper
@@ -377,7 +375,7 @@ In a large bowl, whisk together the eggs, half-and-half, nutmeg, and ¼ teaspoon
 Step 4
 Pour the egg mixture into the crust. Bake until a knife inserted in the center comes out clean, 35 to 40 minutes. Let sit for 5 minutes. Drizzle the greens with the remaining tablespoon of oil and sprinkle with ¼ teaspoon each salt and pepper. Serve with the quiche. 
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Broccoli Spaghetti","/images/broccoli_spaghetti.jpg","•	1 pound spaghetti
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Broccoli Spaghetti","broccoli_spaghetti.jpg","•	1 pound spaghetti
 •	1 large head broccoli (½ pound)
 •	¼ cup olive oil
 •	2 garlic cloves, thinly sliced
@@ -398,7 +396,7 @@ Add the pasta, reserved pasta water, chicken, remaining ¼ teaspoon salt, and a 
 Step 6
 Add the crushed red pepper and toss well. Drizzle with the remaining oil before serving.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Parmesan Pasta With Chicken and Rosemary","/images/parmesan_pasta_with_chicken_and_rosemary.jpg","•	12 ounces orecchiette (about 3 cups)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Parmesan Pasta With Chicken and Rosemary","parmesan_pasta_with_chicken_and_rosemary.jpg","•	12 ounces orecchiette (about 3 cups)
 •	1 2- to 2 1/2-pound rotisserie chicken
 •	2 tablespoons chopped fresh rosemary
 •	3/4 cup grated Parmesan (3 ounces)
@@ -412,7 +410,7 @@ Toss the pasta with the chicken, rosemary, reserved pasta water, ½ cup of the P
 Step 4
 Cook, stirring, over medium-low heat, until the sauce has thickened slightly, 2 to 3 minutes. Sprinkle with the remaining ¼ cup of Parmesan.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Lemon-Rosemary Marinade","/images/lemon_rosemary_marinade.jpg","•	1/3 cup olive oil
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Lemon-Rosemary Marinade","lemon_rosemary_marinade.jpg","•	1/3 cup olive oil
 •	1 lemon, thinly sliced
 •	6 sprigs rosemary
 •	4 cloves garlic, chopped
@@ -428,7 +426,7 @@ Before cooking, remove the food from the container, shake off the excess liquid,
 Step 5
 Cook on a lightly oiled grill to the desired doneness.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Mustard-Roasted Chicken With Vegetables","/images/mustard_roasted_chicken_with_vegetables.jpg","•	1 4-pound chicken, cut into 8 pieces
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Mustard-Roasted Chicken With Vegetables","mustard_roasted_chicken_with_vegetables.jpg","•	1 4-pound chicken, cut into 8 pieces
 •	3 tablespoons whole-grain mustard
 •	2 tablespoons low-sodium soy sauce
 •	kosher salt and pepper
@@ -448,7 +446,7 @@ Nestle the chicken among the vegetables. Roast until the chicken is cooked throu
 Step 5
 Divide the chicken and vegetables among individual plates.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Grilled Shrimp Tacos","/images/garlic_herb_butter_roast_turkey.jpg","•	1/2 cup sour cream
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Grilled Shrimp Tacos","garlic_herb_butter_roast_turkey.jpg","•	1/2 cup sour cream
 •	3 tablespoons mayonnaise
 •	3 tablespoons milk
 •	1/2 teaspoon ground cumin
@@ -473,7 +471,7 @@ Grill the tortillas for 30 seconds on each side, then place inside a paper bag t
 Step 6
 Pull the shrimp off the skewers; divide evenly among the tortillas. Top with the cabbage, sour cream sauce, tomatillo salsa, and a squeeze of grilled lime.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Pan-Roasted Steak with Crispy Broccoli","/images/pan_roasted_steak_with_crispy_broccoli.jpg","•	2 large heads of broccoli (about 2½ lb. total)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Pan-Roasted Steak with Crispy Broccoli","pan_roasted_steak_with_crispy_broccoli.jpg","•	2 large heads of broccoli (about 2½ lb. total)
 •	6 Tbsp. plus ¾ cup extra-virgin olive oil
 •	½ tsp. kosher salt, divided, plus more
 •	Freshly ground black pepper
@@ -489,7 +487,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Pan-Ro
 •	Season steaks generously all over with salt and pepper, pressing to adhere. Heat a dry large skillet, preferably cast iron, over medium-high. Swirl vegetable oil in pan to coat. Pat steaks dry; cook 2 steaks, undisturbed, until undersides are browned, about 5 minutes. Turn; cook until other sides are browned and an instant-read thermometer inserted into the thickest part registers 130° for medium-rare, about 5 minutes. Turn steaks onto fat cap and cook until browned, about 3 minutes. Transfer to a cutting board and let rest 10 minutes. Wipe out skillet, leaving just enough fat to coat pan. Repeat with remaining steak.
 •	Mix cilantro, capers, jalapeño, and remaining ¾ cup olive oil into reserved shallot mixture. Reserve 1 steak and ¼ cup cilantro salsa verde for making the Steak Sandwiches another night. Thinly slice remaining steaks against the grain. Top with salsa verde and serve with broccoli.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chile Chicken Nachos","/images/chile_chicken_nachos.jpg","•	2 Tbsp. extra-virgin olive oil
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chile Chicken Nachos","chile_chicken_nachos.jpg","•	2 Tbsp. extra-virgin olive oil
 •	2 garlic cloves, chopped
 •	1 medium red onion, chopped, divided
 •	1 Tbsp. achiote paste or tomato paste
@@ -517,7 +515,7 @@ Toppings
 •	Bake nachos, rotating pans top to bottom and front to back halfway through, until cheese is melted and edges of chips are beginning to brown, 8–10 minutes. Serve topped with radishes, cilantro, pickled jalapeños, remaining Cotija cheese, and desired toppings alongside.
 •	Do Ahead: Nachos can be assembled 1 hour before baking. Cover with plastic and store at room temperature.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Salsa Macha","/images/salsa_macha.jpg","•	1¼ cups grapeseed oil
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Salsa Macha","salsa_macha.jpg","•	1¼ cups grapeseed oil
 •	6 garlic cloves, peeled
 •	1 cup raw peanuts
 •	4 dried pasilla chiles, seeds removed
@@ -529,7 +527,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Salsa 
 •	Transfer peanuts and chiles to a food processor and pulse until coarsely chopped. With the motor running, stream in oil and purée until peanuts and chiles are finely chopped, about 1 minute. Season salsa with salt and let cool.
 •	Serve salsa macha with tostadas, avocados, herbs, and lime wedges.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basically Buffalo Wings","/images/basically_buffalo_wings.jpg","•	3 lb. chicken wings, flats and drumettes separated
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basically Buffalo Wings","basically_buffalo_wings.jpg","•	3 lb. chicken wings, flats and drumettes separated
 •	½ tsp. baking soda
 •	½ tsp. garlic powder
 •	4¼ tsp. kosher salt, divided
@@ -552,7 +550,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basica
 9.	Transfer wings to a large bowl, pour buffalo sauce over, and toss until evenly coated.
 10.	Transfer wings to platter with celery, serve with blue cheese dressing and a roll of paper towels alongside. Game on!
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basque Burnt Cheesecake","/images/basque_burnt_cheesecake.jpg","•	Unsalted butter (for pan)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Basque Burnt Cheesecake","basque_burnt_cheesecake.jpg","•	Unsalted butter (for pan)
 •	2 lb. cream cheese, room temperature
 •	1½ cups sugar
 •	6 large eggs
@@ -571,7 +569,7 @@ Special Equipment
 •	Let cool slightly (it will fall drastically as it cools), then unmold. Let cool completely. Carefully peel away parchment from sides of cheesecake. Slice into wedges and serve at room temperature, preferably with a glass of sherry alongside.
 •	Do Ahead: Cheesecake be made 1 day ahead. Cover and chill. Be sure to let cheesecake sit for several hours at room temperature to remove chill before serving.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Raw and Roasted Dinner Salad","/images/raw_and_roasted_dinner_salad.jpg","•	1 large delicata squash (about 20 oz.)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Raw and Roasted Dinner Salad","raw_and_roasted_dinner_salad.jpg","•	1 large delicata squash (about 20 oz.)
 •	1 15-oz. can chickpeas
 •	4 Tbsp. extra-virgin olive oil, divided
 •	3 tsp. kosher salt, divided
@@ -597,7 +595,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Raw an
 12.	Thinly slice 4 oz. feta into planks and coarsely crumble over salad.
 13.	Using your hands, crush pecans over salad and serve.
 ",1,"Salad");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Blistered Green Beans with Garlic","/images/blistered_green_beans_with_garlic.jpg","•	⅓ cup extra-virgin olive oil
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Blistered Green Beans with Garlic","blistered_green_beans_with_garlic.jpg","•	⅓ cup extra-virgin olive oil
 •	1 lb. green beans, trimmed, patted dry of any surface moisture or condensation
 •	Kosher salt
 •	6 garlic cloves, sliced
@@ -606,7 +604,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Bliste
 ","•	Heat oil in a large skillet over high until shimmering. Add green beans (the dryer they are, the less they will spatter when they hit the oil) and cook, covering skillet as needed if beans are spattering, until browned underneath, about 3 minutes. Turn beans with tongs and redistribute so they brown evenly (don’t toss them since hot oil can easily slosh out of skillet if you try to show off). Continue to cook, turning occasionally, until browned all over and tender, about 5 minutes longer. Season with salt. Add garlic, capers, and red pepper flakes. Cook, tossing occasionally, just until garlic turns golden, about 1 minute.
 •	Transfer beans to a platter. Spoon caper-garlic mixture over and pour some oil over too; season with salt.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chocolate & Coconut Cream Torte","/images/chocolate_coconut_cream_torte.jpg","•	1 package (12 ounces) vanilla wafers, crushed
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chocolate & Coconut Cream Torte","chocolate_coconut_cream_torte.jpg","•	1 package (12 ounces) vanilla wafers, crushed
 •	1/2 cup butter, melted
 •	8 ounces dark baking chocolate, chopped
 •	1 cup heavy whipping cream
@@ -622,7 +620,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chocol
 •	1-1/4 cups heavy whipping cream
 •	1/2 cup sweetened shredded coconut, toasted
 ","In a large bowl, mix wafer crumbs and butter. Press onto bottom and 2 in. up sides of a greased 9-in. springform pan., Place chocolate in a small bowl. In a small saucepan, bring 1 cup cream just to a boil. Pour over chocolate; let stand 5 minutes. Stir with a whisk until smooth. Pour over prepared crust. Refrigerate 1 hour., In a large saucepan, combine coconut milk, coconut and sugar; bring just to a boil. Strain through a fine-mesh strainer into a bowl, reserving strained coconut; return coconut milk mixture to saucepan. In a small bowl, mix cornstarch and 2 tablespoons water until smooth; stir into coconut milk mixture. Return to a boil, stirring constantly; cook and stir 1-2 minutes or until thickened. Remove from heat., In a small bowl, whisk egg and egg yolk. Whisk a small amount of hot mixture into egg mixture; return all to pan, whisking constantly. Bring to a gentle boil; cook and stir 2 minutes. Remove from heat., IIn a microwave-safe bowl, sprinkle gelatin over remaining cold water; let stand 1 minute. Microwave on high for 30-40 seconds. Stir and let stand 1 minute or until gelatin is completely dissolved. Whisk gelatin mixture into coconut milk mixture. Refrigerate, covered, 1 hour, whisking every 15 minutes., In a large bowl, beat cream until stiff peaks form; fold into coconut milk mixture. Spoon reserved strained coconut into prepared crust. Spread filling over coconut. Refrigerate 6 hours or overnight before serving., Remove rim from pan. Top with toasted coconut.,",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Pressure-Cooker Cinnamon Blueberry French Toast","/images/pressure_cooker_cinnamon_blueberry_french_toast.jpg","•	2 large eggs
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Pressure-Cooker Cinnamon Blueberry French Toast","pressure_cooker_cinnamon_blueberry_french_toast.jpg","•	2 large eggs
 •	1-1/3 cups 2% milk
 •	3 tablespoons sugar
 •	1 teaspoon ground cinnamon
@@ -632,7 +630,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Pressu
 •	3/4 cup fresh or frozen blueberries
 •	Maple syrup
 ","1.	Whisk together the first 6 ingredients. Arrange half of the bread cubes in a greased 1-1/2-qt. baking dish. Top with half the blueberries and half the milk mixture. Repeat layers., Place trivet insert and 1 cup water in a 6-qt. electric pressure cooker. Cover baking dish with foil. Fold an 18x12-in. piece of foil lengthwise into thirds, making a sling. Use the sling to lower the dish onto the trivet., Lock lid; close pressure-release valve. Adjust to pressure-cook on high for 20 minutes. Let pressure release naturally for 10 minutes; quick-release any remaining pressure. Using foil sling, carefully remove baking dish. Let stand 10 minutes. Serve with syrup.",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Baked Cheddar Eggs & Potatoes","/images/baked_cheddar_eggs_potatoes.jpg","•	3 tablespoons butter
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Baked Cheddar Eggs & Potatoes","baked_cheddar_eggs_potatoes.jpg","•	3 tablespoons butter
 •	1-1/2 pounds red potatoes, chopped
 •	1/4 cup minced fresh parsley
 •	2 garlic cloves, minced
@@ -641,7 +639,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Baked 
 •	8 large eggs
 •	1/2 cup shredded extra-sharp cheddar cheese
 ","1.	Preheat oven to 400&deg;. In a 10-in. cast-iron or other ovenproof skillet, heat butter over medium-high heat. Add potatoes; cook and stir until golden brown and tender. Stir in parsley, garlic, salt and pepper. With back of a spoon, make four wells in the potato mixture; break two eggs into each well., Bake until egg whites are completely set and yolks begin to thicken but are not hard, 9-11 minutes. Sprinkle with cheese; bake until cheese is melted, 1 minute.",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Greek Beef Meatballs","/images/greek_beef_meatballs.jpg","•	1 pound 93 percent lean ground beef
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Greek Beef Meatballs","greek_beef_meatballs.jpg","•	1 pound 93 percent lean ground beef
 •	3 teaspoons minced garlic
 •	4 tablespoons finely ground old fashioned oats (see note 1)
 •	2 tablespoons finely chopped fresh oregano
@@ -657,7 +655,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Greek 
 2.	In a large bowl combine all ingredients (except for olive oil, tzatziki sauce, cucumbers and tomatoes) and mix well. Shape into 1 1/2 inch balls and place in prepared skillet or baking dish. 
 3.	Bake for 20 minutes or until browned and cooked through the center. Serve meatballs gyro-style wrapped in a pita with tomatoes, lettuce, and tzatziki sauce, or serve meatballs alone for a grab-n-go meal. 
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Turkey Pesto and Garlic Meatballs","/images/turkey_pesto_and_garlic_meatballs.jpg","•	2 pounds (1 kg) lean ground turkey mince ((or beef, pork or chicken))
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Turkey Pesto and Garlic Meatballs","turkey_pesto_and_garlic_meatballs.jpg","•	2 pounds (1 kg) lean ground turkey mince ((or beef, pork or chicken))
 •	1 cup breadcrumbs ((or almond meal for lower carb))
 •	1 large egg
 •	4 tablespoons traditional basil pesto
@@ -676,7 +674,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Turkey
 3.	Pour in tomato sauce (or crushed tomatoes) and the tomato soup (or passata/sauce). Season with salt and fresh cracked pepper. Simmer on low heat for 10 - 15 minutes or until meatballs are cooked through.
 4.	Garnish with parsley and parmesan cheese, and serve over spaghetti or quinoa or rice!
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Sun Dried Tomato Cheesy Meatballs","/images/sun_dried_tomato_cheesy_meatballs.jpg","•	500 g beef mince
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Sun Dried Tomato Cheesy Meatballs","sun_dried_tomato_cheesy_meatballs.jpg","•	500 g beef mince
 •	500 g pork mince ((or use extra beef mince))
 •	1 egg (, lightly whisked)
 •	1/2 cup almond flour ((or 1/3 cup breadcrumbs if not following low carb))
@@ -697,7 +695,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Sun Dr
 4.	Return meatballs to pan; bring to the boil; reduce heat to low and allow to simmer, covered for 15-20 minutes or until meatballs have cooked through and sauce has thickened.
 5.	Meanwhile, preheat oven to grill (or broil) settings on medium heat halfway through cooking time. When meatballs are ready, arrange the bocconcini slices over the meatballs and place pan into the oven. Grill/broil until cheese has melted.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Giant Meatball Sub","/images/giant_meatball_sub.jpg","•	2 large eggs, lightly beaten
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Giant Meatball Sub","giant_meatball_sub.jpg","•	2 large eggs, lightly beaten
 •	1/3 cup whole milk
 •	1 medium onion, chopped
 •	2 garlic cloves, minced
@@ -711,7 +709,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Giant 
 •	8 slices part-skim mozzarella cheese
 •	Shredded Parmesan cheese, optional
 ","1.	In a large bowl, combine the eggs, milk, onion, garlic, bread crumbs, salt and Italian seasoning. Crumble sausage and beef over mixture; mix well., Shape into 1-in. balls. Place meatballs on a greased rack in a shallow baking pan. Bake at 425&deg; for 15 minutes or until browned; drain., In a Dutch oven, heat the spaghetti sauce over medium heat. Add meatballs; simmer for 15 minutes. Meanwhile, bake bread at 325&deg; for 10 minutes or until heated through., Place mozzarella cheese on bottom half of bread; spoon meatballs onto cheese. Replace top. Slice sandwich into serving-size portions; serve with extra spaghetti sauce and, if desired, Parmesan cheese.",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Jerk Chicken Meatballs + Pineapple Glaze - Alica's Pepperpot","/images/jerk_chicken_meatballs_pineapple_glaze.jpg","•	1 lb ground chicken or turkey
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Jerk Chicken Meatballs + Pineapple Glaze - Alica's Pepperpot","jerk_chicken_meatballs_pineapple_glaze.jpg","•	1 lb ground chicken or turkey
 •	1 1/4 tbsp hot jerk seasoning paste (not marinade)
 •	2 stems scallions, finely sliced
 •	3-4 sprigs thyme leaves
@@ -733,7 +731,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Jerk C
 3.	If shallow frying: Heat oil in pan, fry meatballs in batches cooking 5-6 min per batch. Drain on paper towels.
 4.	Place meatballs in glass dish, after removing from oven or stovetop. Brush pineapple/mango preserves on each meatballs. Serve warm.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Biryani Recipe","/images/chicken_biryani_recipe.jpg","•	2 1/2 -3 pound chicken thighs ( (about 5-6))
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicken Biryani Recipe","chicken_biryani_recipe.jpg","•	2 1/2 -3 pound chicken thighs ( (about 5-6))
 •	1 1/2 teaspoon salt ((adjust to taste))
 •	1 teaspoon minced garlic
 •	1 teaspoon minced ginger
@@ -771,7 +769,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Chicke
 9.	Place in the oven in pre-heated oven uncovered . Cook for about 30- 35 minutes or until chicken is fully cooked.
 10.	Remove let it cool, garnish with cilantro, if desired and serve.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Three-cheese meatball lasagne recipe","/images/three_cheese_meatball_lasagne_recipe.jpg","•	12 sausages
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Three-cheese meatball lasagne recipe","three_cheese_meatball_lasagne_recipe.jpg","•	12 sausages
 •	2 tbsp olive oil Olive oil ol-iv oylProbably the most widely-used oil in cooking, olive oil is pressed from fresh olives. It's…
 •	2 onions, chopped Onion un-yunOnions are endlessly versatile and an essential ingredient in countless recipes. Native to Asia…
 •	4 garlic cloves, crushed
@@ -799,7 +797,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Three-
 5.	Repeat the layers once more; meatballs and sauce, spinach, basil, parmesan, white sauce, pasta. Pour the remaining white sauce over the lasagne, spreading it to the corners to cover the pasta. Dot with the meatballs you set aside earlier and the mozzarella, then scatter over a generous helping of parmesan and cheddar. Heat oven to 190C/170C fan/gas 5. Or if not eating straight away, chill for up to 24 hrs or freeze for two months (defrost in the fridge overnight before cooking).
 6.	Bake the lasagne for 40-50 mins until bubbling and golden with lots of crusty cheesy bits around the edges. Leave to sit for 5-10 mins before serving.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Italian Wedding Soup","/images/italian_wedding_soup.jpg","•	8 oz lean ground beef
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Italian Wedding Soup","italian_wedding_soup.jpg","•	8 oz lean ground beef
 •	8 oz ground pork
 •	1/2 cup fresh hearty white bread crumbs*
 •	1/4 cup chopped fresh parsley
@@ -826,7 +824,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Italia
 7.	**If you like a more brothier soup you can reduce pasta to 3/4 cup. Note that as the soup sits the pasta will absorb more broth so you can add more broth to thin the soup as desired.
 8.	Recipe source: inspired by Ina Garten's and Giada's recipes
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Slab Strawberry Shortcake Recipe","/images/slab_strawberry_shortcake_recipe.jpg","•	3 1/2 cups Gold Medal™ all-purpose flour
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Slab Strawberry Shortcake Recipe","slab_strawberry_shortcake_recipe.jpg","•	3 1/2 cups Gold Medal™ all-purpose flour
 •	1/2 cup granulated sugar
 •	5 teaspoons baking powder
 •	1/2 teaspoon salt
@@ -848,7 +846,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Slab S
 8.	5
 9.	When ready to serve, in chilled large bowl, beat Topping ingredients with electric mixer on medium-high speed until stiff peaks form. Spread top with whipped cream. Using slotted spoon, spoon sugared berries over top. Cut into 4 rows by 4 rows. Store covered in refrigerator.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Cream Cheese Pound Cake","/images/cream_cheese_pound_cake.jpg","•	1 1/2 cups butter, softened
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Cream Cheese Pound Cake","cream_cheese_pound_cake.jpg","•	1 1/2 cups butter, softened
 •	1 (8-oz.) package cream cheese, softened
 •	3 cups sugar
 •	6 large eggs
@@ -868,7 +866,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Honey-
 2.	Place pears on parchment, cut sides up, and roast for 15 minutes. Brush tops with honey, saving any extra, and roast until softened, 5 to 10 minutes longer.
 3.	Cool pears slightly on baking sheet; serve halves warm with small scoops of frozen yogurt, drizzling with any leftover honey.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peanut Butter-Chocolate No-Bake Cookies","/images/peanut_butter_chocolate_no_Bake_cookies.jpg","•	2 cups sugar
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peanut Butter-Chocolate No-Bake Cookies","peanut_butter_chocolate_no_Bake_cookies.jpg","•	2 cups sugar
 •	1/2 cup milk
 •	1 stick (8 tablespoons) unsalted butter
 •	1/4 cup unsweetened cocoa powder
@@ -880,7 +878,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peanut
 2.	Bring the sugar, milk, butter and cocoa to a boil in a medium saucepan over medium heat, stirring occasionally, then let boil for 1 minute. Remove from the heat. Add the oats, peanut butter, vanilla and salt, and stir to combine.
 3.	Drop teaspoonfuls of the mixture onto the prepared baking sheet, and let sit at room temperature until cooled and hardened, about 30 minutes. Refrigerate in an airtight container for up to 3 days.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Easy Instant Pot Cheesecake ","/images/easy_instant_pot_cheesecake.jpg","•	Cooking spray
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Easy Instant Pot Cheesecake ","easy_instant_pot_cheesecake.jpg","•	Cooking spray
 •	3/4 cup graham cracker crumbs (from about 8 whole crackers)
 •	1/4 cup all-purpose flour
 •	1 tablespoon granulated sugar
@@ -904,7 +902,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Easy I
 7.	Top with a sour cream mixture. Whisk together the sour cream, sugar, and vanilla in a small bowl. Pour onto the cheesecake and let cool in the pan for 1 hour.
 8.	Refrigerate for 12 to 24 hours. Refrigerate the cheesecake for 12 to 24 hours before removing from the pan and slicing to serve.
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Keto Low Carb Chocolate Peanut Butter Hearts (Vegan)","/images/keto_low_carb chocolate_peanut_butter_hearts.jpg","•	2 cups smooth peanut butter (Can use any nut or seed butter)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Keto Low Carb Chocolate Peanut Butter Hearts (Vegan)","keto_low_carb chocolate_peanut_butter_hearts.jpg","•	2 cups smooth peanut butter (Can use any nut or seed butter)
 •	3/4 cup sticky sweetener of choice (* See notes)
 •	1 cup coconut flour
 •	1-2 cups chocolate chips of choice
@@ -914,7 +912,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Keto L
 4.	Form 18-20 small balls of peanut butter dough. Press each ball in a heart-shaped cookie cutter, and remove excess peanut butter dough from the edges. Place peanut butter hearts on the lined plate and refrigerate. 
 5.	Melt your chocolate chips of choice. Using two forks, dip each peanut butter heart in the chocolate until evenly coated. Once all the peanut butter hearts are covered in chocolate, refrigerate until firm. 
 ",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Frozen peach margaritas","/images/frozen_peach_margaritas.jpg","•	very ripe peaches 6, stoned and cut into chunks
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Frozen peach margaritas","frozen_peach_margaritas.jpg","•	very ripe peaches 6, stoned and cut into chunks
 •	tequila 240ml
 •	Cointreau or Grand Marnier 120ml
 •	sugar syrup 4 tbsp
@@ -922,7 +920,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Frozen
 ","1.	The day before serving, tip all the ingredients except the lime slices into a freezer-proof box. Stir in 150ml water and freeze until you need it.
 2.	Put 8 glasses in the freezer 20 minutes before you want to serve. To finish, tip everything into a liquidizer or food processor and whizz until smooth (do this in batches if you need to). Divide the margarita mix between glasses and top with lime slices.
 ",1,"Drinks");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Russian Fruit Compote ~ Kompot","/images/russian_fruit_compote_kompot.jpg","•	1 lb fruit such as apples, pears, plums, berries
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Russian Fruit Compote ~ Kompot","russian_fruit_compote_kompot.jpg","•	1 lb fruit such as apples, pears, plums, berries
 •	6 c water
 •	1/2 - 2 c sugar ~ to taste
 •	1 stick cinnamon
@@ -934,14 +932,14 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Russia
 5.	5. Add cinnamon stick and nutmeg and stir well. Simmer for another 10 minutes. (*I* would add these at the beginning)
 6.	6. Remove cinnamon stick before serving. Serve hot, or chill and serve cold.
 ",1,"Drinks");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("BROWNIE TRIFFLE","/images/brownie_triffle.jpg","•	1 19.8 oz pkg fudge brownie mix
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("BROWNIE TRIFFLE","brownie_triffle.jpg","•	1 19.8 oz pkg fudge brownie mix
 •	2 3.9 oz pkg of chocolate fudge instant pudding mix
 •	8 1.4oz heath bars, crushed
 •	1 12 oz cool whip, thawed
 •	1 jar(s) smuckers caramel ice cream topping
 •	garnish: chocolate curls or crushed candy bar
 ","1.	BAKE BROWNIES ACCORDING TO PKG DIRECTIONS. COOL AND CUT INTO BITE SIZE PIECES. PREPARE PUDDING MIX ACCORDING TO PACKAGE DIRECTIONS; SET ASIDE. CRUSH THE HEATH BARS AND PLACE IN BOWL. WHEN LAYERING IN TRIFFLE BOWL, START WITH BROWNIE, THEN CARAMEL, PUDDING, CRUSHED CANDY BAR, THEN COOL WHIP. END WITH COOL WHIP AND GARNISH WITH CHOCOLATE CURLS OR CRUSHED CANDY BARS.",1,"Dessert");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Instant Pot (Pressure Cooker) Crispy Potatoes","/images/instant_pot_crispypotatoes.jpg","•	1 pound fingerling or Yukon Gold potatoes (peeled and cut into uniform 1 – 1½ inch cubes)
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Instant Pot (Pressure Cooker) Crispy Potatoes","instant_pot_crispypotatoes.jpg","•	1 pound fingerling or Yukon Gold potatoes (peeled and cut into uniform 1 – 1½ inch cubes)
 •	2 tablespoons ghee
 •	Diamond Crystal kosher salt
 •	Freshly ground black pepper
@@ -954,7 +952,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Instan
 5.	Season generously with salt and pepper. Leave the potatoes undisturbed for 1 minute before flipping to brown the other side for an additional minute.
 6.	Squeeze on the juice from half a lemon and toss with fresh chives or Italian parsley.
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Instant Pot Glazed Carrots","/images/instant_pot_glazed_carrots.jpg","•	2 lbs. baby carrots
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Instant Pot Glazed Carrots","instant_pot_glazed_carrots.jpg","•	2 lbs. baby carrots
 •	1/3 cup butter
 •	1/2 teaspoon salt
 •	1/3 cup brown sugar

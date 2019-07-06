@@ -2,20 +2,13 @@ drop database Restaurant;
 create database Restaurant;
 use Restaurant;
 
-create table Users
+create table Chef
 (
 	ID int primary key auto_increment,
     username varchar(255) default "Anonymous",
-    creationDate timestamp default CURRENT_TIMESTAMP
-);
-
-create table Chef
-(
-	ID int primary key,
-    portfolio mediumtext,
-    foreign key(ID) references Users(ID)
-    on delete cascade
-    on update cascade
+    creationDate timestamp default CURRENT_TIMESTAMP,
+    portforlio mediumtext not null,
+    preferred bool default false
 );
 
 create table FoodCategory
@@ -28,6 +21,7 @@ create table Food
 (
 	fName varchar(200) primary key,
     picture varchar(200),
+    timetaken int default 1,
     ingredients mediumtext not null, 
     steps mediumtext not null, 
     chefId int,
@@ -56,7 +50,7 @@ create table comments
     foodName varchar(200) not null,
     CommentorID int,
     CommentorCreationDate timestamp default CURRENT_TIMESTAMP,
-    foreign key(CommentorID) references Users(ID)
+    foreign key(CommentorID) references Chef(ID)
     on delete cascade
     on update cascade,
     foreign key(foodName) references Food(fName)
@@ -71,7 +65,14 @@ create table phonenumbers
     phoneNumber numeric(8,0) check(phoneNumber >= 10000000),
     primary key(phoneNumber)
 );
-
+create table emails
+(
+	email varchar(500)  primary key,
+	userId int not null,
+    foreign key(userId) references Chef(ID)
+    on update cascade
+    on delete cascade
+);
 create table userNo
 (
 	userId int not null,

@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/flexGrid.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexGrid.css') }}">
 
-    <title>Hello, world!</title>
+    <title>{{foodItem}} Recipee</title>
   </head>
   <body>
 
@@ -18,12 +18,12 @@
     	<div class="container header">
     		<div class="row text-center">
     			<div class="col-3">
-    				<img src="icons/riceIcon.svg" style="width:25%">
+    				<img src="{{logo}}" style="width:25%">
     				<span>LaoWai GO!</span>
     			</div>
 
     			<div class="col-3 offset-6">
-    				<img src="icons/userIcon.svg">
+    				<img src="{{user}}">
     				<button type="button" class="btn btn-link" data-toggle="modal" data-target="#login">log in</button>
 
     				<!-- LOG IN MODAL -->
@@ -152,15 +152,15 @@
     		<div class="row">
 
     			<div class="col-3 offset-2">
-    				<h2>Hummus(Middle East)</h2>
+    				<h2>{{foodItem}}</h2>
     				<div class="time">
-	    				<img src="icons/clockG.svg" style="width:13%">
-	    				<span>45~ min</span>
+	    				<img src="{{clocker}}" style="width:13%">
+	    				<span>{{time}}</span>
 	    			</div>
     			</div>
 
     			<div class="col-5 offset-1">
-    				<img src="images/Hummus(600x300).jpg">
+    				<img src="{{foodImage}}">
     			</div>
     		</div>
     	</div>
@@ -172,11 +172,11 @@
     			<div class="col-12 justify-content-between">
     					<div class="row offset-6">
 	    					<div class="col-2 heart">
-			    				<img src="icons/heart.svg" style="width: 50%">
+			    				<img src="{{heart}}" style="width: 50%">
 			    				<span>save</span>
 		    				</div>
 		    				<div class="print justify-content-center">
-			    				<img src="icons/print.svg" style="width: 15%">
+			    				<img src="{{print}}" style="width: 15%">
 			    				<span>print</span>
 		    				</div>
 	    				</div>
@@ -203,30 +203,7 @@
 
 					    	<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 						      	<div class="card-body">
-						        	<ul>
-							        	<li>
-							        		<span>12 oz dried Chickpeas (about 2 cups), soaked in water overnight</span>
-							        	</li>
-							        	<li>
-							        		<span>1 tsp Baking Soda</span>
-							        	</li>
-							        	<li>
-							        		<span>3-5 cloves of Garlic</span>
-							        	</li>
-							        	<li>
-							        		<span>Juice of 1 Lemon</span>
-							        	</li>
-							        	<li>
-							        		<span>1 1/2 tsp Kosher Salt</span>
-							        	</li>
-							        	<li>
-							        		<span>1/4 -3/4 cup Tahini (based on preference) 1 cup Ice Cold Water*, divided</span>
-							        	</li>
-							        	<li>
-							        		<span>Optional Toppings: Olive Oil, Cumin, Smoked Paprika, Za’atar, etc.</span>
-							        	</li>
-						        	</ul>
-						      	</div>
+						        	<p>{{ingridients}}</p>
 					    	</div>
 					  	</div>
     				</div>
@@ -241,39 +218,7 @@
 					    </div>
 					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 					      <div class="card-body">
-					        <ol class="ordered-list">
-					        	<li>
-					        		<span><b>Soak Your Chickpeas</b> in water for 12-24 hours, then drain and rinse them.</span>
-					        	</li>
-
-					        	<li>
-					        		<span><b>Cook The Chickpeas</b> with 3-5 cloves of raw Garlic (according to preference) and the Baking Soda (this softens them and makes them easier to peel).</span>
-					        		<ol>
-					        			<li>
-					        				<span><b>INSTANT POT: (recommended)</b> Cover the Chickpeas, Garlic, and Baking Soda with water until it is 2-3″ above the beans. Stir, seal, and cook on Manual HIGH pressure for 10-12 minutes; let the pressure naturally release for 10 minutes before breaking the seal.</span>
-					        			</li>
-					        			<li>
-					        				<span><b>STOVETOP</b>: Add the Chickpeas, Garlic, and Baking Soda to a large pot and cover with water. Bring to a boil and cook for 40 – 120 minutes, until the beans are tender.</span>
-					        			</li>
-					        		</ol>
-					        	</li>
-
-					        	<li>
-					        		<span><b>Peel the Chickpeas</b>. Drain and rinse the cooked beans, until no bubbles remain. Set the cooked cloves of Garlic aside and peel the Chickpeas. The skins should slide off quite easily when you gently “pinch” each bean. Discard the Chickpea “skins” once finished.</span>
-					        	</li>
-
-					        	<li>
-					        		<span><b>Make a Chickpea Puree</b> by adding 3 cups of the peeled Chickpeas and cooked Garlic to the Food Processor, then seal it shut. Mix the Lemon Juice and Salt together in a small bowl until the Salt dissolves, then slowly pour this mixture into the Food Processor while it is running to puree the Chickpeas until they are smooth.</span>
-					        	</li>
-
-					        	<li>
-					        		<span><b>Add Tahini and Water</b>. Add in 1/4 cup of Tahini to the Food Processor, then seal it and add in 1/3 cup of Ice Cold Water while it is running. Let the Food Processor run for 4-5 minutes, to help make the hummus fluffy and smooth. Add in extra Tahini and Water in 1/4 cup increments, if you would like your spread to be thicker or have a higher fat content (and be creamier).</span>
-					        	</li>
-
-					        	<li>
-					        		<span><b>Serve</b> with the remaining peeled Chickpeas and any toppings of your choice. Leftovers will keep well in a sealed container in the fridge for up to 5 days.</span>
-					        	</li>
-					        </ol>
+					        <p>{{instructions}}</p>
 					      </div>
 					    </div>
 					  </div>
@@ -289,27 +234,27 @@
           	<div class="row footer justify-content-between">
           		<div class="row">
 
-		          	<div class="col-1">
-		          		<img src="icons/Facebook.svg" style="width: 50px">
-		          	</div>
+			          	<div class="col-1">
+			          		<img src="{{facebook}}" style="width: 50px">
+			          	</div>
 
-		          	<div class="col-1">
-		          		<img src="icons/WeChat.svg" style="width: 50px">
-		          	</div>
+			          	<div class="col-1">
+			          		<img src="{{wechat}}" style="width: 50px">
+			          	</div>
 
-		          	<div class="col-1">
-		          		<img src="icons/Github.svg" style="width: 50px">
-		          	</div>
+			          	<div class="col-1">
+			          		<img src="{{git}}" style="width: 50px">
+			          	</div>
 
-		          	<div class="col-1">
-		          		<img src="icons/Mail.svg" style="width: 50px">
+			          	<div class="col-1">
+			          		<img src="{{mail}}" style="width: 50px">
+			          	</div>
+	          		</div>
+					
+		          	<div class="row links">
+		          		<a href="#">report</a>
+		          		<a href="#">feedback</a>
 		          	</div>
-          		</div>
-				
-	          	<div class="row links">
-	          		<a href="#">report</a>
-	          		<a href="#">feedback</a>
-	          	</div>
           </div>
       </div>
   </footer>
