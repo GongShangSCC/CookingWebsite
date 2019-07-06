@@ -14,7 +14,10 @@ class ImageSetter:
         dictImages['wecht'] = imageSetter.setImage('WeChat.svg')
         dictImages['mailItem'] = imageSetter.setImage('mail.svg')
         dictImages['user'] = imageSetter.setImage('userIcon.svg')
-    
+        dictImages['heart'] = imageSetter.setImage('heart.svg')
+        dictImages['clock'] = imageSetter.setImage('clock.svg')
+        dictImages['print'] = imageSetter.setImage('print.svg')
+        
         return dictImages
 
     def sliderImagesSetter():
