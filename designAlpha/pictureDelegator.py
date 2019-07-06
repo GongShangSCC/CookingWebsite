@@ -27,4 +27,3 @@ class ImageUrlCreator:
             return "Error"
         
 
-            
