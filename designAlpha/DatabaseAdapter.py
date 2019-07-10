@@ -29,7 +29,7 @@ class DatabaseAdapter:
             
     
     def searchByTypeFoodList(self,foodname):
-        rs = ()
+        
         with engine.connect() as con:
             if foodname == '':
                 rs = con.execute('SELECT * FROM food_list where typeF = \'' + self.foodtype + '\'')
@@ -40,9 +40,30 @@ class DatabaseAdapter:
 
         return rs
     
-    def getFoodItem
+    def getFoodItem(self, foodname):
+        with engine.connect() as con:
+            if foodname == '':
+                
+                return None
+            
+            elif foodname != '':
+                rs = con.execute('SELECT * FROM Food where fName = \'' + foodname + '\'')
+                return rs
+
+        return rs
     
-    
-    
-    
-        
+    def signUp(self,userInfo):
+         with engine.connect() as con:
+             con.execute('insert into Chef(username,portfolio) values(\'' + userInfo['username'] +'\',\'' + userInfo['portfolio'] + '\')')
+             rs = con.execute('select ID from Chef where username = \'' + userInfo['username'] +'\'')
+             for row in rs:
+                 self.setEmail(row[0],userInfo['email'])
+                 
+             return True
+             
+         return False
+             
+    def setEmail(self,userId,email):
+        with engine.connect() as con:
+            con.execute('insert into emails(email,userId) values(\'' + email +'\',' + userId + ')')
+            

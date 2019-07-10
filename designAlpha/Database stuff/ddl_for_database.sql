@@ -5,7 +5,7 @@ use Restaurant;
 create table Chef
 (
 	ID int primary key auto_increment,
-    username varchar(255) default "Anonymous",
+    username varchar(255) unique,
     creationDate timestamp default CURRENT_TIMESTAMP,
     portforlio mediumtext not null,
     preferred bool default false
@@ -69,6 +69,7 @@ create table emails
 (
 	email varchar(500)  primary key,
 	userId int not null,
+    preferredEmail bool default false,
     foreign key(userId) references Chef(ID)
     on update cascade
     on delete cascade
@@ -157,6 +158,23 @@ create table foodFacts
     on delete cascade
     on update cascade,
     foreign key(factId) references Facts(factId)
+    on delete cascade
+    on update cascade
+);
+create table FeaturedFood
+(
+	ID int primary key auto_increment,
+    creationDate timestamp default CURRENT_TIMESTAMP,
+    item1 varchar(200) not null,
+    item2 varchar(200) not null,
+    item3 varchar(200) not null,
+    foreign key(item1) references Food(fName)
+    on delete cascade
+    on update cascade,
+    foreign key(item2) references Food(fName)
+    on delete cascade
+    on update cascade,
+    foreign key(item3) references Food(fName)
     on delete cascade
     on update cascade
 );
