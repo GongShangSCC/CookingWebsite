@@ -36,30 +36,37 @@
 						      	</div>
 
 						      	<div class="modal-body">
-						        <form>
+						        <form action = "{{url_for('Login')}}" method = "POST">
 
 		  							<div class="form-group">
-									    <label for="exampleInputEmail1">Email address</label>
+									   <!--   <label for="exampleInputEmail1">Email address</label>
 									    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-									    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+										{{ logForm.LoginEmail.label}}<br>
+										{{ logForm.LoginEmail }}
 		  							</div>
 
 									<div class="form-group">
-										<label for="exampleInputPassword1">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										<!--  <label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
+										{{ logForm.LoginPassword.label}}<br>
+										{{ logForm.LoginPassword }}
 									</div>
 
 									<div class="form-group form-check">
-										<input type="checkbox" class="form-check-input" id="exampleCheck1">
-										<label class="form-check-label" for="exampleCheck1">Remember me</label>
+										<!--  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Remember me</label> -->
+										{{ logForm.RememberMe.label}}<br>
+										{{ logForm.RememberMe }}
 									</div>
 		  							
 								</form>
 						      	</div>
 
 						      <div class="modal-footer">
-						        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-						        <button type="submit" class="btn signup-button">LOGIN</button>
+						        <!--  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						        <button type="submit" class="btn signup-button">LOGIN</button> -->
+								{{ logForm.Login }}
 						      </div>
 
 						    </div>
@@ -79,39 +86,50 @@
 						        		</button>
 						      	</div>
 						      	<div class="modal-body">
-						        <form>
+						        <form action = "{{url_for('SignUp')}}" method = "POST">
 
 		  							<div class="form-group">
-									    <label for="email">Email address</label>
+									  <!--  <label for="email">Email address</label>
 									    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-									    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+										{{ signForm.email.label}}<br>
+										{{ signForm.email }}
 		  							</div>
 
 		  							<div class="form-group">
-									    <label for="confirEmailAddress">Confirm email address</label>
-									    <input type="email" class="form-control" id="confirEmailAddress" aria-describedby="emailHelp" placeholder="Confirm email address">
+									   <!--  <label for="confirEmailAddress">Confirm email address</label>
+									    <input type="email" class="form-control" id="confirEmailAddress" aria-describedby="emailHelp" placeholder="Confirm email address"> -->
+										{{ signForm.confirEmailAddress.label}}<br>
+										{{ signForm.confirEmailAddress }}
 									</div>
 
 									<div class="form-group">
-										<label for="password">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										<!-- <label for="password">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
+										{{ signForm.password.label}}<br>
+										{{ signForm.password }}
 									</div>
 
 									<div class="form-group">
-										<label for="confirmPassword">Confirm Password</label>
-										<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+										<!-- <label for="confirmPassword">Confirm Password</label>
+										<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password"> -->
+										{{ signForm.confirpassword.label}}<br>
+										{{ signForm.confirpassword }}
 									</div>
 
 									<div class="form-group">
-										<label for="portfolio">Chef's portfolio</label>
-										<input type="portfolio" class="form-control" id="portfolio" placeholder="Your portfolio">
+										<!-- <label for="portfolio">Chef's portfolio</label>
+										<input type="portfolio" class="form-control" id="portfolio" placeholder="Your portfolio"> -->
+										{{ signForm.portfolio.label }}<br>
+										{{ signForm.portfolio }}
 									</div>
 										
 								</form>
 						      	</div>
 						      	<div class="modal-footer">
-				        			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-				        			<button type="submit" class="btn btn-success">Submit</button>
+				        			<!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				        			<button type="submit" class="btn btn-success">Submit</button> -->
+									{{ signForm.submit }}
 				      			</div>
 				    		</div>
 						</div>

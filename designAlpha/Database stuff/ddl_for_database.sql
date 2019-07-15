@@ -8,7 +8,9 @@ create table Chef
     username varchar(255) unique,
     creationDate timestamp default CURRENT_TIMESTAMP,
     portforlio mediumtext not null,
-    preferred bool default false
+    preferred bool default false,
+    confirmed bool default false,
+    confirmed_on timestamp
 );
 
 create table FoodCategory
