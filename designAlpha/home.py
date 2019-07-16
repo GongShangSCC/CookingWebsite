@@ -4,6 +4,8 @@ Created on Fri Jul  5 14:49:22 2019
 
 @author: Lee Flame
 """
+#please use singleton for database
+#please use a singleton for the defaultImages and sliderImages
 
 from flask import Flask, render_template, redirect,url_for
 from ImageSetter import ImageSetter
@@ -62,7 +64,13 @@ def SignUp():
     if signForm.validate_on_submit():
         if signForm.validate() == False:
             return render_template("indexBootstrap.html",sliderImages = sliderImages ,signForm = signForm,logForm = logForm, defaultImages = defaultImages)
-        elif logForm.validate() == True:
+        elif signForm.validate() == True:
+            userInfo = {}
+            userInfo['username'] = signForm.username.data
+            userInfo['email'] = signForm.email.data
+            userInfo['password'] = signForm.password.data
+            userInfo['portfolio'] = signForm.portfolio.data
+            
             return render_template("ConfirmEmail.html")
         
 
