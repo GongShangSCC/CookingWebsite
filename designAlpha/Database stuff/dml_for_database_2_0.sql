@@ -67,7 +67,7 @@ insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Garlic
 7.	Garlic sauce should be braised onto the shell of the crab.
 8.	Serve as soon as possible, sprinkled with parsley and garnished with lemon
 ",1,"Dishes");
-insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peking duck","peking_duck.jpeg","•	One 5 to 6-pound whole duck
+insert into Food(fName,picture,ingredients,steps,chefId,foodtype) values("Peking duck","peking_duck.jpg","•	One 5 to 6-pound whole duck
 •	Sea salt
 •	Freshly ground white pepper
 •	6 tablespoons honey

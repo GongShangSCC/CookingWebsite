@@ -3,6 +3,13 @@ import SupportedImages
 from pictureDelegator import ImageUrlCreator
 
 class ImageSetter:
+    def image_setter(result):
+        imageSetter = ImageUrlCreator(SupportedImages.JPG)
+        listImages = []
+        for row in result:
+            listImages.append(imageSetter.setImage(row['picture']))
+        return listImages
+        
     def getForReusedImages():
         
         imageSetter = ImageUrlCreator(SupportedImages.SVG)

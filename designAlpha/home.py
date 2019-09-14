@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Jul  5 14:49:22 2019
-
-@author: Lee Flame
-"""
 #please use singleton for database
 #please use a singleton for the defaultImages and sliderImages
 
@@ -38,6 +33,9 @@ def foodItem():
     defaultImages = ImageSetter.getForReusedImages()
     
     return render_template("foodGrid.html", defaultImages = defaultImages)
+@app.route('/viewAll')
+def viewAll():
+    pass
 
 @app.route('/Login', methods=['POST'])
 def Login():

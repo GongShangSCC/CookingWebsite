@@ -17,6 +17,7 @@ class DatabaseAdapter:
             
     def searchAllFoodList(self,foodname):
         #db.select([census]).where(census.columns.sex == 'F')
+        
         with engine.connect() as con:
             if foodname == '':
                 rs = con.execute('SELECT * FROM food_list')
@@ -25,7 +26,7 @@ class DatabaseAdapter:
                 rs = con.execute('SELECT * FROM food_list where food = \'' + foodname + '\'')
                 return rs
 
-        return rs
+        return None
             
     
     def searchByTypeFoodList(self,foodname):
@@ -38,30 +39,30 @@ class DatabaseAdapter:
                 rs = con.execute('SELECT * FROM food_list where typeF = \'' + self.foodtype + '\' and food = \'' + foodname + '\'')
                 return rs
 
-        return rs
+        return None
     
     def getFoodItem(self, foodname):
+        
         with engine.connect() as con:
             if foodname == '':
-                
                 return None
-            
             elif foodname != '':
                 rs = con.execute('SELECT * FROM Food where fName = \'' + foodname + '\'')
                 return rs
 
-        return rs
+        return None
     
     def signUp(self,userInfo):
-         with engine.connect() as con:
-             con.execute('insert into Chef(username,portfolio) values(\'' + userInfo['username'] +'\',\'' + userInfo['portfolio'] + '\')')
-             rs = con.execute('select ID from Chef where username = \'' + userInfo['username'] +'\'')
-             for row in rs:
-                 self.setEmail(row[0],userInfo['email'])
-                 
-             return True
+        
+        with engine.connect() as con:
+            con.execute('insert into Chef(username,portfolio) values(\'' + userInfo['username'] +'\',\'' + userInfo['portfolio'] + '\')')
+            rs = con.execute('select ID from Chef where username = \'' + userInfo['username'] +'\'')
+            for row in rs:
+                self.setEmail(row[0],userInfo['email'])
+                
+            return True
              
-         return False
+        return False
              
     def setEmail(self,userId,email):
         with engine.connect() as con:
