@@ -3,7 +3,7 @@ import SupportedImages
 from pictureDelegator import ImageUrlCreator
 
 class ImageSetter:
-    def image_setter(result):
+    def image_list_setter(result):
         imageSetter = ImageUrlCreator(SupportedImages.JPG)
         listImages = []
         for row in result:

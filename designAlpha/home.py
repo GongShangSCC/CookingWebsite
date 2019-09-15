@@ -2,11 +2,12 @@
 #please use singleton for database
 #please use a singleton for the defaultImages and sliderImages
 
-from flask import Flask, render_template, redirect,url_for
+from flask import Flask, render_template, redirect,url_for,request
 from ImageSetter import ImageSetter
 from Forms import SignUpForm,LogInForm
-app = Flask(__name__)
+from DatabaseAdapter import DatabaseAdapter
 
+app = Flask(__name__)
 app.config['SECRET_KEY'] = "LoveAndPeace"
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -33,9 +34,23 @@ def foodItem():
     defaultImages = ImageSetter.getForReusedImages()
     
     return render_template("foodGrid.html", defaultImages = defaultImages)
+
+@app.route('/drinks')
+def drinks():
+    return redirect(url_for('viewAll', mType = "drinks"))
+
 @app.route('/viewAll')
 def viewAll():
-    pass
+    mType = request.args['mType']
+    if mType.lower() == 'drinks':
+        db = DatabaseAdapter("Drinks")
+        results = db.searchByTypeFoodList('')
+        listImages = ImageSetter.image_list_setter(results)
+        listNames = []
+        for row in results:
+            listNames.append(row['fName'])
+        return render_template("dishes.html", listNames=listNames, listImages=listImages)
+        
 
 @app.route('/Login', methods=['POST'])
 def Login():
