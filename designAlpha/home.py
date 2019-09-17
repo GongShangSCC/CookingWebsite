@@ -39,17 +39,18 @@ def foodItem():
 def drinks():
     return redirect(url_for('viewAll', mType = "drinks"))
 
-@app.route('/viewAll')
-def viewAll():
-    mType = request.args['mType']
+@app.route('/meals',defaults = {'mType': 'drinks'})
+def viewAll(mType):
+    
     if mType.lower() == 'drinks':
         db = DatabaseAdapter("Drinks")
         results = db.searchByTypeFoodList('')
         listImages = ImageSetter.image_list_setter(results)
         listNames = []
         for row in results:
-            listNames.append(row['fName'])
-        return render_template("dishes.html", listNames=listNames, listImages=listImages)
+            listNames.append(row[0])
+        size = len(listNames)
+        return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
         
 
 @app.route('/Login', methods=['POST'])
@@ -89,4 +90,8 @@ def SignUp():
 
 if __name__ == '__main__':
     app.debug = False
+
     app.run()
+
+
+    

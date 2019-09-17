@@ -8,14 +8,14 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" >
 	</head>
 	<body>
-		{% for name, image in zip(range(listNames), range(listImages)) %}
+		{% for x in range(size)%}
 			<div>
 				<h2> 
-					{{name}}
+					{{listNames[x]}}
 				</h2>
 			</div>
 			<div>
-				<img src="{{image}}" style="width:25%">
+				<img src="{{listImages[x]}}" style="width:25%">
 			</div>
 		{% endfor %}
       

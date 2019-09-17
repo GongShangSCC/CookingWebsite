@@ -7,7 +7,7 @@ class ImageSetter:
         imageSetter = ImageUrlCreator(SupportedImages.JPG)
         listImages = []
         for row in result:
-            listImages.append(imageSetter.setImage(row['picture']))
+            listImages.append(imageSetter.setImage(row[1]))
         return listImages
         
     def getForReusedImages():
