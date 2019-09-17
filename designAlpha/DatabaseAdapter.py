@@ -2,7 +2,7 @@
 
 import pymysql as engine
 #engine = db.create_engine('mysql://user:LoveAndPeace@localhost/Restaurant')
-from ImageSetter import ImageSetter
+
 con = engine.connect("localhost","user","LoveAndPeace","Restaurant" )
 
 class DatabaseAdapter:

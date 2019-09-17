@@ -2,10 +2,10 @@
 #please use singleton for database
 #please use a singleton for the defaultImages and sliderImages
 
-from flask import Flask, render_template, redirect,url_for,request
+from flask import Flask, render_template, redirect,url_for
 from ImageSetter import ImageSetter
 from Forms import SignUpForm,LogInForm
-from DatabaseAdapter import DatabaseAdapter
+from Database_delegator import Database_delegator
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "LoveAndPeace"
@@ -37,20 +37,31 @@ def foodItem():
 
 @app.route('/drinks')
 def drinks():
-    return redirect(url_for('viewAll', mType = "drinks"))
+    dd = Database_delegator()
+    listNames,listImages,size = dd.multiple_entries("Drinks",'')
+    return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
 
-@app.route('/meals',defaults = {'mType': 'drinks'})
+@app.route('/salad')
+def salad():
+    dd = Database_delegator()
+    listNames,listImages,size = dd.multiple_entries("Salad",'')
+    return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
+
+@app.route('/dessert')
+def dessert():
+    dd = Database_delegator()
+    listNames,listImages,size = dd.multiple_entries("Dessert",'')
+    return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
+
+@app.route('/dishes')
+def dishes():
+    dd = Database_delegator()
+    listNames,listImages,size = dd.multiple_entries("Dishes",'')
+    return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
+
+@app.route('/meals',defaults = {'mType': 'all'})
 def viewAll(mType):
-    
-    if mType.lower() == 'drinks':
-        db = DatabaseAdapter("Drinks")
-        results = db.searchByTypeFoodList('')
-        listImages = ImageSetter.image_list_setter(results)
-        listNames = []
-        for row in results:
-            listNames.append(row[0])
-        size = len(listNames)
-        return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
+    pass
         
 
 @app.route('/Login', methods=['POST'])
@@ -90,7 +101,6 @@ def SignUp():
 
 if __name__ == '__main__':
     app.debug = False
-
     app.run()
 
 
