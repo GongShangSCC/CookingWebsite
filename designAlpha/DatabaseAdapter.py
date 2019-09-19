@@ -13,9 +13,13 @@ class DatabaseAdapter:
         if self.foodtype == 'all':
             foodList = self.searchAllFoodList(foodname)
             return foodList
-        if self.foodtype != 'all':
+        if self.foodtype == 'resteraunt':
+            resterauntList = self.sear
+            return resterauntList
+        if self.foodtype != 'all' and self.foodtype != 'resteraunt':
             foodList = self.searchByTypeFoodList(foodname)
             return foodList
+        
             
     def searchAllFoodList(self,foodname):
         #db.select([census]).where(census.columns.sex == 'F')
@@ -70,3 +74,13 @@ class DatabaseAdapter:
         with con.cursor() as db:
             db.execute('insert into emails(email,userId) values(\'' + email +'\',' + userId + ')')
             
+    def searchResteraunts(self, resteraunt):
+        with con.cursor() as db:
+            if resteraunt == '':
+                message = 'SELECT * FROM restaurantLocation'
+                db.execute(message)
+                temp = db.fetchall()
+                return temp
+            elif resteraunt != '':
+                rs = db.execute('SELECT * FROM restaurantLocation where nameOfRestaurant = \'' + resteraunt + '\'')
+                return rs

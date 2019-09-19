@@ -59,6 +59,12 @@ def dishes():
     listNames,listImages,size = dd.multiple_entries("Dishes",'')
     return render_template("meals.html", listNames=listNames, listImages=listImages, size = size)
 
+@app.route('/restaurants')
+def restaurants():
+    dd = Database_delegator()
+    listNames,listImages,size = dd.multiple_rest_entries("resteraunt",'')
+    return render_template("restaurant.html", listNames=listNames, listImages=listImages, size = size)
+
 @app.route('/meals',defaults = {'mType': 'all'})
 def viewAll(mType):
     pass

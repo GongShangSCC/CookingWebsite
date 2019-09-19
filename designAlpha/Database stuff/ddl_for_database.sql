@@ -21,7 +21,7 @@ create table FoodCategory
 
 create table Food
 (
-	fName varchar(200) primary key,
+	fName varchar(255) primary key,
     picture varchar(200),
     timetaken int default 1,
     ingredients mediumtext not null, 
@@ -39,6 +39,7 @@ create table Food
 create table restaurantLocation
 (
 	nameOfRestaurant varchar(255),
+    mainPicture varchar(200),
     street text not null,
     region text not null,
     city text not null,    
@@ -179,4 +180,11 @@ create table FeaturedFood
     foreign key(item3) references Food(fName)
     on delete cascade
     on update cascade
+);
+
+create table imageShowcase
+(
+	pName varchar(255),
+	picture varchar(200),
+    primary key(pName, picture)
 );

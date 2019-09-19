@@ -13,3 +13,13 @@ class Database_delegator:
         size = len(listNames)
         return listNames, listImages, size
 
+    def multiple_rest_entries(self,mType,resteraunt):
+        db = DatabaseAdapter(mType)
+        results = db.searchResteraunts(resteraunt)
+        listImages = ImageSetter.image_list_setter(results)
+        listNames = []
+        for row in results:
+            listNames.append(row[0])
+        size = len(listNames)
+        return listNames, listImages, size
+    
