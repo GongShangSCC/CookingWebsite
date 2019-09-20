@@ -32,8 +32,12 @@ def foodItem():
 
     defaultImages = {}
     defaultImages = ImageSetter.getForReusedImages()
-    
-    return render_template("foodGrid.html", defaultImages = defaultImages)
+    dd = Database_delegator()
+    result = dd.return_fulltupples("Dishes","Salsa Macha")
+    row = result[0]
+    listImages = ImageSetter.image_list_setter(result)
+    image = listImages[0]
+    return render_template("foodGrid.html", defaultImages = defaultImages, row = row,image = image)
 
 @app.route('/drinks')
 def drinks():
@@ -62,7 +66,7 @@ def dishes():
 @app.route('/restaurants')
 def restaurants():
     dd = Database_delegator()
-    listNames,listImages,size = dd.multiple_rest_entries("resteraunt",'')
+    listNames,listImages,size = dd.multiple_entries("resteraunt",'')
     return render_template("restaurant.html", listNames=listNames, listImages=listImages, size = size)
 
 @app.route('/meals',defaults = {'mType': 'all'})

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flexGrid.css') }}">
 
-    <title>{{defaultImages['logoItem']}} Recipee</title>
+    <title>{{row[0]}} Recipee</title>
   </head>
   <body>
 
@@ -131,11 +131,11 @@
     		<div class="row justify-content-center">
     			<div class="col-10">
 	    			<nav class="navbar navbar-light bg-light sections navigator">
-					  	<a class="navbar-brand" href="#">main</a>
-					  	<a class="navbar-brand" href="#">drinks</a>
-					  	<a class="navbar-brand" href="#">salad</a>
-					  	<a class="navbar-brand" href="#">dessert</a>
-					  	<a class="navbar-brand" href="#">dishes</a>
+					  	<a class="navbar-brand" href="indexBootstrap">main</a>
+					  	<a class="navbar-brand" href="drinks">drinks</a>
+					  	<a class="navbar-brand" href="salad">salad</a>
+					  	<a class="navbar-brand" href="dessert">dessert</a>
+					  	<a class="navbar-brand" href="dishes">dishes</a>
 					  	<form class="form-inline">
 					    	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 					    	<button class="btn btn-dark my-2 my-sm-0" type="submit">&#9906;</button>
@@ -152,15 +152,15 @@
     		<div class="row">
 
     			<div class="col-3 offset-2">
-    				<h2>{{foodItem}}</h2>
+    				<h2>{{row[0]}}</h2>
     				<div class="time">
 	    				<img src="{{defaultImages['clock']}}" style="width:13%">
-	    				<span>{{time}}</span>
+	    				<span>{{row[2]}}</span>
 	    			</div>
     			</div>
 
     			<div class="col-5 offset-1">
-    				<img src="{{foodImage}}">
+    				<img src="{{image}}">
     			</div>
     		</div>
     	</div>
@@ -203,7 +203,7 @@
 
 					    	<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 						      	<div class="card-body">
-						        	<p>{{ingridients}}</p>
+						        	<p>{{row[3]}}</p>
 					    	</div>
 					  	</div>
     				</div>
@@ -218,7 +218,7 @@
 					    </div>
 					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 					      <div class="card-body">
-					        <p>{{instructions}}</p>
+					        <p>{{row[4]}}</p>
 					      </div>
 					    </div>
 					  </div>

@@ -9,15 +9,15 @@ class DatabaseAdapter:
     def __init__(self, foodtype):
         self.foodtype = foodtype
         
-    def getFoodList(self,foodname):
+    def getFoodList(self,item):
         if self.foodtype == 'all':
-            foodList = self.searchAllFoodList(foodname)
+            foodList = self.searchAllFoodList(item)
             return foodList
         if self.foodtype == 'resteraunt':
-            resterauntList = self.sear
+            resterauntList = self.searchResteraunts(item)
             return resterauntList
         if self.foodtype != 'all' and self.foodtype != 'resteraunt':
-            foodList = self.searchByTypeFoodList(foodname)
+            foodList = self.searchByTypeFoodList(item)
             return foodList
         
             
@@ -25,10 +25,12 @@ class DatabaseAdapter:
         #db.select([census]).where(census.columns.sex == 'F')
         with con.cursor() as db:
             if foodname == '':
-                rs = db.execute('SELECT * FROM Food')
+                db.execute('SELECT * FROM Food')
+                rs = db.fetchall()
                 return rs
             elif foodname != '':
-                rs = db.execute('SELECT * FROM Food where food = \'' + foodname + '\'')
+                db.execute('SELECT * FROM Food where fName = \'' + foodname + '\'')
+                rs = db.fetchall()
                 return rs
 
         return None
@@ -43,7 +45,8 @@ class DatabaseAdapter:
                 temp = db.fetchall()
                 return temp
             elif foodname != '':
-                rs = db.execute('SELECT * FROM Food where foodtype = \'' + self.foodtype + '\' and food = \'' + foodname + '\'')
+                db.execute('SELECT * FROM Food where foodtype = \'' + self.foodtype + '\' and fName = \'' + foodname + '\'')
+                rs = db.fetchall()
                 return rs
 
         return None
@@ -53,7 +56,8 @@ class DatabaseAdapter:
             if foodname == '':
                 return None
             elif foodname != '':
-                rs = db.execute('SELECT * FROM Food where fName = \'' + foodname + '\'')
+                db.execute('SELECT * FROM Food where fName = \'' + foodname + '\'')
+                rs = db.fetchall()
                 return rs
 
         return None
@@ -62,7 +66,8 @@ class DatabaseAdapter:
         
         with con.cursor() as db:
             db.execute('insert into Chef(username,portfolio) values(\'' + userInfo['username'] +'\',\'' + userInfo['portfolio'] + '\')')
-            rs = db.execute('select ID from Chef where username = \'' + userInfo['username'] +'\'')
+            db.execute('select ID from Chef where username = \'' + userInfo['username'] +'\'')
+            rs = db.fetchall()
             for row in rs:
                 self.setEmail(row[0],userInfo['email'])
                 
@@ -82,5 +87,6 @@ class DatabaseAdapter:
                 temp = db.fetchall()
                 return temp
             elif resteraunt != '':
-                rs = db.execute('SELECT * FROM restaurantLocation where nameOfRestaurant = \'' + resteraunt + '\'')
-                return rs
+                db.execute('SELECT * FROM restaurantLocation where nameOfRestaurant = \'' + resteraunt + '\'')
+                temp = db.fetchall()
+                return temp
