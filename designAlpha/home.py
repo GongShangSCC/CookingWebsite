@@ -2,7 +2,7 @@
 #please use singleton for database
 #please use a singleton for the defaultImages and sliderImages
 
-from flask import Flask, render_template, redirect,url_for
+from flask import Flask, render_template, redirect,url_for,request
 from ImageSetter import ImageSetter
 from Forms import SignUpForm,LogInForm
 from Database_delegator import Database_delegator
@@ -27,13 +27,13 @@ def home():
     return render_template("indexBootstrap.html",sliderImages = sliderImages ,signForm = signForm,logForm = logForm, defaultImages = defaultImages)
 
 
-@app.route('/foodGrid')
+@app.route('/foodGrid',  methods=['GET', 'POST'])
 def foodItem():
-
+    fItem = request.args.get('fItem')
     defaultImages = {}
     defaultImages = ImageSetter.getForReusedImages()
     dd = Database_delegator()
-    result = dd.return_fulltupples("Dishes","Salsa Macha")
+    result = dd.return_fulltupples("Unknown",fItem)
     row = result[0]
     listImages = ImageSetter.image_list_setter(result)
     image = listImages[0]

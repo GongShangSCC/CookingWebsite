@@ -8,6 +8,7 @@ con = engine.connect("localhost","user","LoveAndPeace","Restaurant" )
 class DatabaseAdapter:
     def __init__(self, foodtype):
         self.foodtype = foodtype
+        self.list = ["Drinks","Salad","Dessert","Dishes"]
         
     def getFoodList(self,item):
         if self.foodtype == 'all':
@@ -16,8 +17,11 @@ class DatabaseAdapter:
         if self.foodtype == 'resteraunt':
             resterauntList = self.searchResteraunts(item)
             return resterauntList
-        if self.foodtype != 'all' and self.foodtype != 'resteraunt':
+        if self.foodtype in self.list:
             foodList = self.searchByTypeFoodList(item)
+            return foodList
+        if self.foodtype != 'all' and self.foodtype != 'resteraunt' and self.foodtype not in self.list:
+            foodList = self.searchAllFoodList(item)
             return foodList
         
             

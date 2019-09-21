@@ -11,11 +11,15 @@
 		{% for x in range(size)%}
 			<div>
 				<h2> 
-					{{listNames[x]}}
+					<a href="{{url_for('foodItem', fItem=listNames[x])}}">
+						{{listNames[x]}}
+					</a>
 				</h2>
 			</div>
 			<div>
+			<a href="{{url_for('foodItem', fItem=listNames[x])}}">
 				<img src="{{listImages[x]}}" style="width:25%">
+			</a>
 			</div>
 		{% endfor %}
       
